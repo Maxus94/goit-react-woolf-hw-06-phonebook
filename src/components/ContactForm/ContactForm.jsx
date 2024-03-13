@@ -17,6 +17,7 @@ export const ContactForm = ({ createContact }) => {
 
   const handleSubmit = evt => {
     evt.preventDefault();
+    console.log(name, number);
     createContact(name, number);
     setName('');
     setNumber('');
